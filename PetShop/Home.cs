@@ -16,5 +16,15 @@ namespace PetShop
         {
             InitializeComponent();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
