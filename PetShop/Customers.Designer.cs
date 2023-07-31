@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.CusSaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.CusPhoneTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CusAddTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CusNameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -47,11 +47,10 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.CusDelBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.CusEditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -60,61 +59,63 @@
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.CustomerDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerDGV)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuThinButton23
+            // CusSaveBtn
             // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "Save";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Navy;
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(245, 262);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(108, 36);
-            this.bunifuThinButton23.TabIndex = 22;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CusSaveBtn.ActiveBorderThickness = 1;
+            this.CusSaveBtn.ActiveCornerRadius = 20;
+            this.CusSaveBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.CusSaveBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.CusSaveBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.CusSaveBtn.BackColor = System.Drawing.Color.White;
+            this.CusSaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CusSaveBtn.BackgroundImage")));
+            this.CusSaveBtn.ButtonText = "Save";
+            this.CusSaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CusSaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CusSaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.CusSaveBtn.IdleBorderThickness = 1;
+            this.CusSaveBtn.IdleCornerRadius = 20;
+            this.CusSaveBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.CusSaveBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.CusSaveBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.CusSaveBtn.Location = new System.Drawing.Point(245, 262);
+            this.CusSaveBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.CusSaveBtn.Name = "CusSaveBtn";
+            this.CusSaveBtn.Size = new System.Drawing.Size(108, 36);
+            this.CusSaveBtn.TabIndex = 22;
+            this.CusSaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CusSaveBtn.Click += new System.EventHandler(this.CusSaveBtn_Click);
             // 
-            // textBox3
+            // CusPhoneTb
             // 
-            this.textBox3.Location = new System.Drawing.Point(247, 99);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 36);
-            this.textBox3.TabIndex = 17;
+            this.CusPhoneTb.Location = new System.Drawing.Point(247, 99);
+            this.CusPhoneTb.Multiline = true;
+            this.CusPhoneTb.Name = "CusPhoneTb";
+            this.CusPhoneTb.Size = new System.Drawing.Size(200, 36);
+            this.CusPhoneTb.TabIndex = 17;
             // 
             // label14
             // 
@@ -138,13 +139,13 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "Address";
             // 
-            // textBox2
+            // CusAddTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 181);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(651, 33);
-            this.textBox2.TabIndex = 10;
+            this.CusAddTb.Location = new System.Drawing.Point(23, 181);
+            this.CusAddTb.Multiline = true;
+            this.CusAddTb.Name = "CusAddTb";
+            this.CusAddTb.Size = new System.Drawing.Size(651, 33);
+            this.CusAddTb.TabIndex = 10;
             // 
             // label10
             // 
@@ -157,13 +158,14 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Name";
             // 
-            // textBox1
+            // CusNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 99);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 36);
-            this.textBox1.TabIndex = 8;
+            this.CusNameTb.Location = new System.Drawing.Point(23, 99);
+            this.CusNameTb.Multiline = true;
+            this.CusNameTb.Name = "CusNameTb";
+            this.CusNameTb.Size = new System.Drawing.Size(200, 36);
+            this.CusNameTb.TabIndex = 8;
+            this.CusNameTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label8
             // 
@@ -237,55 +239,57 @@
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
             // 
-            // bunifuThinButton22
+            // CusDelBtn
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Delete";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Navy;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(481, 262);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(108, 36);
-            this.bunifuThinButton22.TabIndex = 24;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CusDelBtn.ActiveBorderThickness = 1;
+            this.CusDelBtn.ActiveCornerRadius = 20;
+            this.CusDelBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.CusDelBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.CusDelBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.CusDelBtn.BackColor = System.Drawing.Color.White;
+            this.CusDelBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CusDelBtn.BackgroundImage")));
+            this.CusDelBtn.ButtonText = "Delete";
+            this.CusDelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CusDelBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CusDelBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.CusDelBtn.IdleBorderThickness = 1;
+            this.CusDelBtn.IdleCornerRadius = 20;
+            this.CusDelBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.CusDelBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.CusDelBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.CusDelBtn.Location = new System.Drawing.Point(481, 262);
+            this.CusDelBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.CusDelBtn.Name = "CusDelBtn";
+            this.CusDelBtn.Size = new System.Drawing.Size(108, 36);
+            this.CusDelBtn.TabIndex = 24;
+            this.CusDelBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CusDelBtn.Click += new System.EventHandler(this.CusDelBtn_Click);
             // 
-            // bunifuThinButton21
+            // CusEditBtn
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Edit";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Navy;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(363, 262);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(108, 36);
-            this.bunifuThinButton21.TabIndex = 23;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CusEditBtn.ActiveBorderThickness = 1;
+            this.CusEditBtn.ActiveCornerRadius = 20;
+            this.CusEditBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.CusEditBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.CusEditBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.CusEditBtn.BackColor = System.Drawing.Color.White;
+            this.CusEditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CusEditBtn.BackgroundImage")));
+            this.CusEditBtn.ButtonText = "Update";
+            this.CusEditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CusEditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CusEditBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.CusEditBtn.IdleBorderThickness = 1;
+            this.CusEditBtn.IdleCornerRadius = 20;
+            this.CusEditBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.CusEditBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.CusEditBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.CusEditBtn.Location = new System.Drawing.Point(363, 262);
+            this.CusEditBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.CusEditBtn.Name = "CusEditBtn";
+            this.CusEditBtn.Size = new System.Drawing.Size(108, 36);
+            this.CusEditBtn.TabIndex = 23;
+            this.CusEditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CusEditBtn.Click += new System.EventHandler(this.CusEditBtn_Click);
             // 
             // label17
             // 
@@ -312,57 +316,6 @@
             this.pictureBox8.TabIndex = 4;
             this.pictureBox8.TabStop = false;
             // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(19, 397);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(800, 329);
-            this.guna2DataGridView1.TabIndex = 9;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.DarkGray;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -378,7 +331,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.guna2DataGridView1);
+            this.panel1.Controls.Add(this.CustomerDGV);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(172, 12);
@@ -389,15 +342,15 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.bunifuThinButton22);
-            this.panel3.Controls.Add(this.bunifuThinButton21);
-            this.panel3.Controls.Add(this.bunifuThinButton23);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.CusDelBtn);
+            this.panel3.Controls.Add(this.CusEditBtn);
+            this.panel3.Controls.Add(this.CusSaveBtn);
+            this.panel3.Controls.Add(this.CusPhoneTb);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.CusAddTb);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.CusNameTb);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(19, 39);
@@ -441,6 +394,29 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 40);
             this.panel2.TabIndex = 36;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox4.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 7);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 41;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Maroon;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Navy;
+            this.label4.Location = new System.Drawing.Point(57, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 19);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Customers";
             // 
             // bunifuElipse3
             // 
@@ -488,29 +464,6 @@
             this.bunifuElipse5.ElipseRadius = 35;
             this.bunifuElipse5.TargetControl = this;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox4.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 7);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 41;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Maroon;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(57, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 19);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "Customers";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -522,6 +475,7 @@
             this.label3.Size = new System.Drawing.Size(93, 19);
             this.label3.TabIndex = 50;
             this.label3.Text = "Employees";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox3
             // 
@@ -533,6 +487,59 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 49;
             this.pictureBox3.TabStop = false;
+            // 
+            // CustomerDGV
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.CustomerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.CustomerDGV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.CustomerDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CustomerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.CustomerDGV.ColumnHeadersHeight = 28;
+            this.CustomerDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CustomerDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            this.CustomerDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CustomerDGV.Location = new System.Drawing.Point(19, 397);
+            this.CustomerDGV.Name = "CustomerDGV";
+            this.CustomerDGV.RowHeadersVisible = false;
+            this.CustomerDGV.Size = new System.Drawing.Size(800, 329);
+            this.CustomerDGV.TabIndex = 23;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.CustomerDGV.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.CustomerDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CustomerDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Maroon;
+            this.CustomerDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.CustomerDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.CustomerDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.CustomerDGV.ThemeStyle.HeaderStyle.Height = 28;
+            this.CustomerDGV.ThemeStyle.ReadOnly = false;
+            this.CustomerDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.CustomerDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.CustomerDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.CustomerDGV.ThemeStyle.RowsStyle.Height = 22;
+            this.CustomerDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CustomerDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.CustomerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDGV_CellContentClick);
             // 
             // Customers
             // 
@@ -563,7 +570,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -572,6 +578,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -579,13 +586,13 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
-        private System.Windows.Forms.TextBox textBox3;
+        private Bunifu.Framework.UI.BunifuThinButton2 CusSaveBtn;
+        private System.Windows.Forms.TextBox CusPhoneTb;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox CusAddTb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CusNameTb;
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.PictureBox pictureBox11;
@@ -595,11 +602,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel3;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 CusDelBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 CusEditBtn;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
@@ -615,5 +621,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2DataGridView CustomerDGV;
     }
 }

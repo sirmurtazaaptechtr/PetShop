@@ -121,7 +121,7 @@
     <value>761, 49</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="DeleteBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGwAAAAkCAYAAABsbd/MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIcSURBVGhD7Zq/axNhGMf7RxTaopKaoHYQWjoXGpSk2lop
@@ -136,7 +136,7 @@
         NcEMKGZBz8q5whj7QmGOhcIcC4U5FgpzKiLHVehEcrE7lwUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EditBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGwAAAAkCAYAAABsbd/MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIcSURBVGhD7Zq/axNhGMf7RxTaopKaoHYQWjoXGpSk2lop
@@ -151,7 +151,7 @@
         NcEMKGZBz8q5whj7QmGOhcIcC4U5FgpzKiLHVehEcrE7lwUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuThinButton23.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="SaveBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGwAAAAkCAYAAABsbd/MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIcSURBVGhD7Zq/axNhGMf7RxTaopKaoHYQWjoXGpSk2lop
@@ -169,7 +169,7 @@
   <data name="pictureBox8.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADuhSURBVHhe7d0J
+        DAAACwwBP0AiyAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADuhSURBVHhe7d0J
         /G31vP/x3zmdxlOp04CUkjSoECqVqAyRoiJXId0ukYpEboR/kYtM1xBRMnS5cQ1XZl2NZKiMhZIxRINS
         ogn/96ffOp3vWef9+/32sPbea32/r/fj8eyhz72tvfb6ftbav73XWt819c9//hMAABTGFgEAQN5sEQAA
         5M0WAQBA3mwRAADkzRYBAEDebBEAAOTNFgEAQN5sEQAA5M0WAQBA3mwRAADkzRYBAEDebBEAAOTNFgEA

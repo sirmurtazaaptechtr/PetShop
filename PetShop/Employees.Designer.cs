@@ -52,22 +52,22 @@
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.EmployeeDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.EmpPasswordTb = new System.Windows.Forms.TextBox();
+            this.EmpPhoneTb = new System.Windows.Forms.TextBox();
+            this.EmpDOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.EmpAddTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.EmpNameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -81,7 +81,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDGV)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -101,7 +101,7 @@
             this.label7.Location = new System.Drawing.Point(30, 60);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 19);
-            this.label7.TabIndex = 32;
+            this.label7.TabIndex = 1;
             this.label7.Text = "EmpName";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
@@ -126,7 +126,7 @@
             this.label6.Location = new System.Drawing.Point(62, 452);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 19);
-            this.label6.TabIndex = 30;
+            this.label6.TabIndex = 7;
             this.label6.Text = "Logout";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
@@ -151,7 +151,7 @@
             this.label5.Location = new System.Drawing.Point(62, 384);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 19);
-            this.label5.TabIndex = 28;
+            this.label5.TabIndex = 6;
             this.label5.Text = "Billings";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
@@ -192,7 +192,7 @@
             this.label3.Location = new System.Drawing.Point(54, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 19);
-            this.label3.TabIndex = 26;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Employees";
             // 
             // pictureBox3
@@ -215,7 +215,7 @@
             this.label4.Location = new System.Drawing.Point(62, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 19);
-            this.label4.TabIndex = 26;
+            this.label4.TabIndex = 5;
             this.label4.Text = "Customers";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
@@ -240,7 +240,7 @@
             this.label1.Location = new System.Drawing.Point(62, 194);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 19);
-            this.label1.TabIndex = 22;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Products";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -274,7 +274,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.guna2DataGridView1);
+            this.panel1.Controls.Add(this.EmployeeDGV);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(171, 12);
@@ -283,11 +283,12 @@
             this.panel1.TabIndex = 19;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // guna2DataGridView1
+            // EmployeeDGV
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.EmployeeDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.EmployeeDGV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.EmployeeDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,9 +296,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.EmployeeDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.EmployeeDGV.ColumnHeadersHeight = 28;
+            this.EmployeeDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -305,34 +306,35 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(18, 392);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(800, 329);
-            this.guna2DataGridView1.TabIndex = 9;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.DarkGray;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.EmployeeDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.EmployeeDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeDGV.Location = new System.Drawing.Point(18, 392);
+            this.EmployeeDGV.Name = "EmployeeDGV";
+            this.EmployeeDGV.RowHeadersVisible = false;
+            this.EmployeeDGV.Size = new System.Drawing.Size(800, 329);
+            this.EmployeeDGV.TabIndex = 22;
+            this.EmployeeDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.EmployeeDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.EmployeeDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.EmployeeDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.EmployeeDGV.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.EmployeeDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Maroon;
+            this.EmployeeDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.EmployeeDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.EmployeeDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.EmployeeDGV.ThemeStyle.HeaderStyle.Height = 28;
+            this.EmployeeDGV.ThemeStyle.ReadOnly = false;
+            this.EmployeeDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.EmployeeDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.EmployeeDGV.ThemeStyle.RowsStyle.Height = 22;
+            this.EmployeeDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.EmployeeDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDGV_CellContentClick);
             // 
             // label11
             // 
@@ -343,25 +345,25 @@
             this.label11.Location = new System.Drawing.Point(348, 363);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(129, 26);
-            this.label11.TabIndex = 8;
+            this.label11.TabIndex = 21;
             this.label11.Text = "Employees";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.bunifuThinButton22);
-            this.panel3.Controls.Add(this.bunifuThinButton21);
-            this.panel3.Controls.Add(this.bunifuThinButton23);
+            this.panel3.Controls.Add(this.DeleteBtn);
+            this.panel3.Controls.Add(this.EditBtn);
+            this.panel3.Controls.Add(this.SaveBtn);
             this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.guna2DateTimePicker1);
+            this.panel3.Controls.Add(this.EmpPasswordTb);
+            this.panel3.Controls.Add(this.EmpPhoneTb);
+            this.panel3.Controls.Add(this.EmpDOB);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.EmpAddTb);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.EmpNameTb);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(18, 34);
@@ -369,80 +371,83 @@
             this.panel3.Size = new System.Drawing.Size(800, 326);
             this.panel3.TabIndex = 7;
             // 
-            // bunifuThinButton22
+            // DeleteBtn
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Delete";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Navy;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(480, 257);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(108, 36);
-            this.bunifuThinButton22.TabIndex = 24;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeleteBtn.ActiveBorderThickness = 1;
+            this.DeleteBtn.ActiveCornerRadius = 20;
+            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.DeleteBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.DeleteBtn.BackColor = System.Drawing.Color.White;
+            this.DeleteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteBtn.BackgroundImage")));
+            this.DeleteBtn.ButtonText = "Delete";
+            this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.DeleteBtn.IdleBorderThickness = 1;
+            this.DeleteBtn.IdleCornerRadius = 20;
+            this.DeleteBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.DeleteBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.DeleteBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.DeleteBtn.Location = new System.Drawing.Point(480, 257);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(108, 36);
+            this.DeleteBtn.TabIndex = 20;
+            this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
-            // bunifuThinButton21
+            // EditBtn
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Edit";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Navy;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(362, 257);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(108, 36);
-            this.bunifuThinButton21.TabIndex = 23;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.ActiveBorderThickness = 1;
+            this.EditBtn.ActiveCornerRadius = 20;
+            this.EditBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.EditBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.EditBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.EditBtn.BackColor = System.Drawing.Color.White;
+            this.EditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.BackgroundImage")));
+            this.EditBtn.ButtonText = "Update";
+            this.EditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.EditBtn.IdleBorderThickness = 1;
+            this.EditBtn.IdleCornerRadius = 20;
+            this.EditBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.EditBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.EditBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.EditBtn.Location = new System.Drawing.Point(362, 257);
+            this.EditBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(108, 36);
+            this.EditBtn.TabIndex = 19;
+            this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
-            // bunifuThinButton23
+            // SaveBtn
             // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "Save";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Navy;
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(244, 257);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(108, 36);
-            this.bunifuThinButton23.TabIndex = 22;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveBtn.ActiveBorderThickness = 1;
+            this.SaveBtn.ActiveCornerRadius = 20;
+            this.SaveBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.SaveBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.SaveBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.SaveBtn.BackColor = System.Drawing.Color.White;
+            this.SaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveBtn.BackgroundImage")));
+            this.SaveBtn.ButtonText = "Save";
+            this.SaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.SaveBtn.IdleBorderThickness = 1;
+            this.SaveBtn.IdleCornerRadius = 20;
+            this.SaveBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.SaveBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.SaveBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.SaveBtn.Location = new System.Drawing.Point(244, 257);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(108, 36);
+            this.SaveBtn.TabIndex = 18;
+            this.SaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // label16
             // 
@@ -452,38 +457,38 @@
             this.label16.Location = new System.Drawing.Point(17, 230);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(80, 19);
-            this.label16.TabIndex = 19;
+            this.label16.TabIndex = 16;
             this.label16.Text = "Password";
             // 
-            // textBox4
+            // EmpPasswordTb
             // 
-            this.textBox4.Location = new System.Drawing.Point(22, 257);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 36);
-            this.textBox4.TabIndex = 18;
+            this.EmpPasswordTb.Location = new System.Drawing.Point(22, 257);
+            this.EmpPasswordTb.Multiline = true;
+            this.EmpPasswordTb.Name = "EmpPasswordTb";
+            this.EmpPasswordTb.Size = new System.Drawing.Size(200, 36);
+            this.EmpPasswordTb.TabIndex = 17;
             // 
-            // textBox3
+            // EmpPhoneTb
             // 
-            this.textBox3.Location = new System.Drawing.Point(246, 94);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 36);
-            this.textBox3.TabIndex = 17;
+            this.EmpPhoneTb.Location = new System.Drawing.Point(246, 94);
+            this.EmpPhoneTb.Multiline = true;
+            this.EmpPhoneTb.Name = "EmpPhoneTb";
+            this.EmpPhoneTb.Size = new System.Drawing.Size(200, 36);
+            this.EmpPhoneTb.TabIndex = 11;
             // 
-            // guna2DateTimePicker1
+            // EmpDOB
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.Crimson;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(473, 94);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker1.TabIndex = 16;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 6, 19, 14, 57, 59, 686);
+            this.EmpDOB.Checked = true;
+            this.EmpDOB.FillColor = System.Drawing.Color.Crimson;
+            this.EmpDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.EmpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.EmpDOB.Location = new System.Drawing.Point(473, 94);
+            this.EmpDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.EmpDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.EmpDOB.Name = "EmpDOB";
+            this.EmpDOB.Size = new System.Drawing.Size(200, 36);
+            this.EmpDOB.TabIndex = 13;
+            this.EmpDOB.Value = new System.DateTime(2023, 6, 19, 14, 57, 59, 686);
             // 
             // label15
             // 
@@ -493,7 +498,7 @@
             this.label15.Location = new System.Drawing.Point(469, 67);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(99, 19);
-            this.label15.TabIndex = 15;
+            this.label15.TabIndex = 12;
             this.label15.Text = "Date of Birth";
             // 
             // label14
@@ -504,7 +509,7 @@
             this.label14.Location = new System.Drawing.Point(242, 67);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 19);
-            this.label14.TabIndex = 13;
+            this.label14.TabIndex = 10;
             this.label14.Text = "Phone";
             // 
             // label9
@@ -515,16 +520,16 @@
             this.label9.Location = new System.Drawing.Point(17, 148);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 19);
-            this.label9.TabIndex = 11;
+            this.label9.TabIndex = 14;
             this.label9.Text = "Address";
             // 
-            // textBox2
+            // EmpAddTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(22, 176);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(651, 33);
-            this.textBox2.TabIndex = 10;
+            this.EmpAddTb.Location = new System.Drawing.Point(22, 176);
+            this.EmpAddTb.Multiline = true;
+            this.EmpAddTb.Name = "EmpAddTb";
+            this.EmpAddTb.Size = new System.Drawing.Size(651, 33);
+            this.EmpAddTb.TabIndex = 15;
             // 
             // label10
             // 
@@ -534,16 +539,17 @@
             this.label10.Location = new System.Drawing.Point(17, 67);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 19);
-            this.label10.TabIndex = 9;
+            this.label10.TabIndex = 8;
             this.label10.Text = "Name";
             // 
-            // textBox1
+            // EmpNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 94);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 36);
-            this.textBox1.TabIndex = 8;
+            this.EmpNameTb.Location = new System.Drawing.Point(22, 94);
+            this.EmpNameTb.Multiline = true;
+            this.EmpNameTb.Name = "EmpNameTb";
+            this.EmpNameTb.Size = new System.Drawing.Size(200, 36);
+            this.EmpNameTb.TabIndex = 9;
+            this.EmpNameTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label8
             // 
@@ -554,7 +560,7 @@
             this.label8.Location = new System.Drawing.Point(17, 17);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(129, 26);
-            this.label8.TabIndex = 6;
+            this.label8.TabIndex = 8;
             this.label8.Text = "Employees";
             // 
             // pictureBox8
@@ -584,7 +590,7 @@
             this.label17.Location = new System.Drawing.Point(61, 135);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(56, 19);
-            this.label17.TabIndex = 34;
+            this.label17.TabIndex = 2;
             this.label17.Text = "Home";
             // 
             // pictureBox11
@@ -632,7 +638,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDGV)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -667,21 +673,21 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox EmpAddTb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox EmpNameTb;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private System.Windows.Forms.TextBox EmpPasswordTb;
+        private System.Windows.Forms.TextBox EmpPhoneTb;
+        private Guna.UI2.WinForms.Guna2DateTimePicker EmpDOB;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private Guna.UI2.WinForms.Guna2DataGridView EmployeeDGV;
+        private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 SaveBtn;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox11;
     }
