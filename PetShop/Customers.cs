@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetShop
-{
+namespace PetShop{
     public partial class Customers : Form
     {
         public Customers()
@@ -60,7 +53,6 @@ namespace PetShop
             CusAddTb.Text = "";            
         }
         int key = 0;
-
         private void CusSaveBtn_Click(object sender, EventArgs e)
         {
             if (CusNameTb.Text == "" || CusPhoneTb.Text == "" || CusAddTb.Text == "")
@@ -91,8 +83,7 @@ namespace PetShop
                 }
             }
 
-        }        
-
+        }
         private void EmployeeDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             CusNameTb.Text = CustomerDGV.SelectedRows[0].Cells[1].Value.ToString();
@@ -110,7 +101,6 @@ namespace PetShop
             }
 
         }
-
         private void CusEditBtn_Click(object sender, EventArgs e)
         {
             if (CusNameTb.Text == "" || CusPhoneTb.Text == "" || CusAddTb.Text == "")
@@ -142,7 +132,6 @@ namespace PetShop
                 }
             }
         }
-
         private void CusDelBtn_Click(object sender, EventArgs e)
         {
             if (key == 0)
@@ -170,6 +159,25 @@ namespace PetShop
                     ClearTb();
                 }
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Products ProObj = new Products();
+            ProObj.Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Customers CustObj = new Customers();
+            CustObj.Show();
+            this.Hide();
+        }
+
+        private void Customers_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

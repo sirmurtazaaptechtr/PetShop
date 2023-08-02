@@ -70,7 +70,9 @@ namespace PetShop
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            Products ProObj = new Products();
+            ProObj.Show();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -237,6 +239,13 @@ namespace PetShop
                 }
             }
 
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+            Employees EmpObj = new Employees();
+            EmpObj.Show();
+            this.Hide();
         }
     }
 }
