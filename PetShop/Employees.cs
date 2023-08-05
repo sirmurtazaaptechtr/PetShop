@@ -43,7 +43,9 @@ namespace PetShop
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            Billings BillsObj = new Billings();
+            BillsObj.Show();
+            this.Hide();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

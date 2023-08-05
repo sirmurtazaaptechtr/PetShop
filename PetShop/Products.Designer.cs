@@ -33,15 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ProductsDGV = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -50,20 +44,15 @@
             this.ProCategoriesCb = new System.Windows.Forms.ComboBox();
             this.ProPriceTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ProDelBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.ProEditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.ProSaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ProQtyTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.ProNameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -71,30 +60,30 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.ProDelBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ProEditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ProSaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox11.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox11.Location = new System.Drawing.Point(25, 128);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 61;
-            this.pictureBox11.TabStop = false;
             // 
             // bunifuElipse5
             // 
@@ -126,61 +115,6 @@
             this.label3.TabIndex = 64;
             this.label3.Text = "Employees";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox3.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox3.Location = new System.Drawing.Point(25, 256);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 63;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox7.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox7.Location = new System.Drawing.Point(66, 14);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 59;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox6.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox6.Location = new System.Drawing.Point(26, 445);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 57;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox5.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox5.Location = new System.Drawing.Point(26, 377);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 55;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox2.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 53;
-            this.pictureBox2.TabStop = false;
             // 
             // label17
             // 
@@ -295,6 +229,12 @@
             // 
             this.ProCategoriesCb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProCategoriesCb.FormattingEnabled = true;
+            this.ProCategoriesCb.Items.AddRange(new object[] {
+            "Select Category",
+            "Bird",
+            "Dog",
+            "Cat",
+            "Food"});
             this.ProCategoriesCb.Location = new System.Drawing.Point(22, 175);
             this.ProCategoriesCb.Name = "ProCategoriesCb";
             this.ProCategoriesCb.Size = new System.Drawing.Size(649, 29);
@@ -319,81 +259,6 @@
             this.label2.Size = new System.Drawing.Size(47, 19);
             this.label2.TabIndex = 25;
             this.label2.Text = "Price";
-            // 
-            // ProDelBtn
-            // 
-            this.ProDelBtn.ActiveBorderThickness = 1;
-            this.ProDelBtn.ActiveCornerRadius = 20;
-            this.ProDelBtn.ActiveFillColor = System.Drawing.Color.Black;
-            this.ProDelBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.ProDelBtn.ActiveLineColor = System.Drawing.Color.Black;
-            this.ProDelBtn.BackColor = System.Drawing.Color.White;
-            this.ProDelBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProDelBtn.BackgroundImage")));
-            this.ProDelBtn.ButtonText = "Delete";
-            this.ProDelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProDelBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProDelBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ProDelBtn.IdleBorderThickness = 1;
-            this.ProDelBtn.IdleCornerRadius = 20;
-            this.ProDelBtn.IdleFillColor = System.Drawing.Color.Crimson;
-            this.ProDelBtn.IdleForecolor = System.Drawing.Color.Navy;
-            this.ProDelBtn.IdleLineColor = System.Drawing.Color.Crimson;
-            this.ProDelBtn.Location = new System.Drawing.Point(457, 212);
-            this.ProDelBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ProDelBtn.Name = "ProDelBtn";
-            this.ProDelBtn.Size = new System.Drawing.Size(108, 36);
-            this.ProDelBtn.TabIndex = 24;
-            this.ProDelBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ProEditBtn
-            // 
-            this.ProEditBtn.ActiveBorderThickness = 1;
-            this.ProEditBtn.ActiveCornerRadius = 20;
-            this.ProEditBtn.ActiveFillColor = System.Drawing.Color.Black;
-            this.ProEditBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.ProEditBtn.ActiveLineColor = System.Drawing.Color.Black;
-            this.ProEditBtn.BackColor = System.Drawing.Color.White;
-            this.ProEditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProEditBtn.BackgroundImage")));
-            this.ProEditBtn.ButtonText = "Update";
-            this.ProEditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProEditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProEditBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ProEditBtn.IdleBorderThickness = 1;
-            this.ProEditBtn.IdleCornerRadius = 20;
-            this.ProEditBtn.IdleFillColor = System.Drawing.Color.Crimson;
-            this.ProEditBtn.IdleForecolor = System.Drawing.Color.Navy;
-            this.ProEditBtn.IdleLineColor = System.Drawing.Color.Crimson;
-            this.ProEditBtn.Location = new System.Drawing.Point(339, 212);
-            this.ProEditBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ProEditBtn.Name = "ProEditBtn";
-            this.ProEditBtn.Size = new System.Drawing.Size(108, 36);
-            this.ProEditBtn.TabIndex = 23;
-            this.ProEditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ProSaveBtn
-            // 
-            this.ProSaveBtn.ActiveBorderThickness = 1;
-            this.ProSaveBtn.ActiveCornerRadius = 20;
-            this.ProSaveBtn.ActiveFillColor = System.Drawing.Color.Black;
-            this.ProSaveBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.ProSaveBtn.ActiveLineColor = System.Drawing.Color.Black;
-            this.ProSaveBtn.BackColor = System.Drawing.Color.White;
-            this.ProSaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProSaveBtn.BackgroundImage")));
-            this.ProSaveBtn.ButtonText = "Save";
-            this.ProSaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProSaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProSaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ProSaveBtn.IdleBorderThickness = 1;
-            this.ProSaveBtn.IdleCornerRadius = 20;
-            this.ProSaveBtn.IdleFillColor = System.Drawing.Color.Crimson;
-            this.ProSaveBtn.IdleForecolor = System.Drawing.Color.Navy;
-            this.ProSaveBtn.IdleLineColor = System.Drawing.Color.Crimson;
-            this.ProSaveBtn.Location = new System.Drawing.Point(221, 212);
-            this.ProSaveBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ProSaveBtn.Name = "ProSaveBtn";
-            this.ProSaveBtn.Size = new System.Drawing.Size(108, 36);
-            this.ProSaveBtn.TabIndex = 22;
-            this.ProSaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProQtyTb
             // 
@@ -456,19 +321,6 @@
             this.label8.TabIndex = 6;
             this.label8.Text = "Products";
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.ErrorImage")));
-            this.pictureBox8.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox8.Location = new System.Drawing.Point(763, 8);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -496,17 +348,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 40);
             this.panel2.TabIndex = 52;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox4.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox4.Location = new System.Drawing.Point(26, 313);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 41;
-            this.pictureBox4.TabStop = false;
             // 
             // bunifuElipse1
             // 
@@ -558,11 +399,180 @@
             this.label5.Size = new System.Drawing.Size(61, 19);
             this.label5.TabIndex = 56;
             this.label5.Text = "Billings";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // bunifuElipse4
             // 
             this.bunifuElipse4.ElipseRadius = 35;
             this.bunifuElipse4.TargetControl = this;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox4.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox4.Location = new System.Drawing.Point(26, 313);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 41;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox11.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox11.Location = new System.Drawing.Point(25, 128);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 61;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox3.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox3.Location = new System.Drawing.Point(25, 256);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 63;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox7.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox7.Location = new System.Drawing.Point(66, 14);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 59;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox6.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox6.Location = new System.Drawing.Point(26, 445);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 57;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox5.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox5.Location = new System.Drawing.Point(26, 377);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 55;
+            this.pictureBox5.TabStop = false;
+            // 
+            // ProDelBtn
+            // 
+            this.ProDelBtn.ActiveBorderThickness = 1;
+            this.ProDelBtn.ActiveCornerRadius = 20;
+            this.ProDelBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.ProDelBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ProDelBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.ProDelBtn.BackColor = System.Drawing.Color.White;
+            this.ProDelBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProDelBtn.BackgroundImage")));
+            this.ProDelBtn.ButtonText = "Delete";
+            this.ProDelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProDelBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProDelBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ProDelBtn.IdleBorderThickness = 1;
+            this.ProDelBtn.IdleCornerRadius = 20;
+            this.ProDelBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.ProDelBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.ProDelBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.ProDelBtn.Location = new System.Drawing.Point(457, 212);
+            this.ProDelBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ProDelBtn.Name = "ProDelBtn";
+            this.ProDelBtn.Size = new System.Drawing.Size(108, 36);
+            this.ProDelBtn.TabIndex = 24;
+            this.ProDelBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ProDelBtn.Click += new System.EventHandler(this.ProDelBtn_Click);
+            // 
+            // ProEditBtn
+            // 
+            this.ProEditBtn.ActiveBorderThickness = 1;
+            this.ProEditBtn.ActiveCornerRadius = 20;
+            this.ProEditBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.ProEditBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ProEditBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.ProEditBtn.BackColor = System.Drawing.Color.White;
+            this.ProEditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProEditBtn.BackgroundImage")));
+            this.ProEditBtn.ButtonText = "Update";
+            this.ProEditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProEditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProEditBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ProEditBtn.IdleBorderThickness = 1;
+            this.ProEditBtn.IdleCornerRadius = 20;
+            this.ProEditBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.ProEditBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.ProEditBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.ProEditBtn.Location = new System.Drawing.Point(339, 212);
+            this.ProEditBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ProEditBtn.Name = "ProEditBtn";
+            this.ProEditBtn.Size = new System.Drawing.Size(108, 36);
+            this.ProEditBtn.TabIndex = 23;
+            this.ProEditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ProEditBtn.Click += new System.EventHandler(this.ProEditBtn_Click);
+            // 
+            // ProSaveBtn
+            // 
+            this.ProSaveBtn.ActiveBorderThickness = 1;
+            this.ProSaveBtn.ActiveCornerRadius = 20;
+            this.ProSaveBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.ProSaveBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ProSaveBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.ProSaveBtn.BackColor = System.Drawing.Color.White;
+            this.ProSaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProSaveBtn.BackgroundImage")));
+            this.ProSaveBtn.ButtonText = "Save";
+            this.ProSaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProSaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProSaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ProSaveBtn.IdleBorderThickness = 1;
+            this.ProSaveBtn.IdleCornerRadius = 20;
+            this.ProSaveBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.ProSaveBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.ProSaveBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.ProSaveBtn.Location = new System.Drawing.Point(221, 212);
+            this.ProSaveBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ProSaveBtn.Name = "ProSaveBtn";
+            this.ProSaveBtn.Size = new System.Drawing.Size(108, 36);
+            this.ProSaveBtn.TabIndex = 22;
+            this.ProSaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ProSaveBtn.Click += new System.EventHandler(this.ProSaveBtn_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.ErrorImage")));
+            this.pictureBox8.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox8.Location = new System.Drawing.Point(763, 8);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox2.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 53;
+            this.pictureBox2.TabStop = false;
             // 
             // Products
             // 
@@ -588,21 +598,21 @@
             this.Name = "Products";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

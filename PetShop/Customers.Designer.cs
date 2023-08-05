@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.CusSaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
             this.CusPhoneTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -42,18 +41,15 @@
             this.CusNameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.CusDelBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.CusEditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CustomerDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.CusDelBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.CusEditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.CusSaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -68,46 +64,24 @@
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.CustomerDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerDGV)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomerDGV)).BeginInit();
             this.SuspendLayout();
-            // 
-            // CusSaveBtn
-            // 
-            this.CusSaveBtn.ActiveBorderThickness = 1;
-            this.CusSaveBtn.ActiveCornerRadius = 20;
-            this.CusSaveBtn.ActiveFillColor = System.Drawing.Color.Black;
-            this.CusSaveBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.CusSaveBtn.ActiveLineColor = System.Drawing.Color.Black;
-            this.CusSaveBtn.BackColor = System.Drawing.Color.White;
-            this.CusSaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CusSaveBtn.BackgroundImage")));
-            this.CusSaveBtn.ButtonText = "Save";
-            this.CusSaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CusSaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CusSaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.CusSaveBtn.IdleBorderThickness = 1;
-            this.CusSaveBtn.IdleCornerRadius = 20;
-            this.CusSaveBtn.IdleFillColor = System.Drawing.Color.Crimson;
-            this.CusSaveBtn.IdleForecolor = System.Drawing.Color.Navy;
-            this.CusSaveBtn.IdleLineColor = System.Drawing.Color.Crimson;
-            this.CusSaveBtn.Location = new System.Drawing.Point(245, 262);
-            this.CusSaveBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.CusSaveBtn.Name = "CusSaveBtn";
-            this.CusSaveBtn.Size = new System.Drawing.Size(108, 36);
-            this.CusSaveBtn.TabIndex = 22;
-            this.CusSaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CusSaveBtn.Click += new System.EventHandler(this.CusSaveBtn_Click);
             // 
             // CusPhoneTb
             // 
@@ -184,60 +158,112 @@
             this.bunifuElipse1.ElipseRadius = 35;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // pictureBox11
+            // label17
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox11.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox11.Location = new System.Drawing.Point(18, 126);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 47;
-            this.pictureBox11.TabStop = false;
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Crimson;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Navy;
+            this.label17.Location = new System.Drawing.Point(62, 135);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(56, 19);
+            this.label17.TabIndex = 48;
+            this.label17.Text = "Home";
             // 
-            // pictureBox7
+            // label11
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox7.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox7.Location = new System.Drawing.Point(59, 12);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 45;
-            this.pictureBox7.TabStop = false;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Navy;
+            this.label11.Location = new System.Drawing.Point(321, 368);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(163, 26);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Customers List";
             // 
-            // pictureBox6
+            // panel1
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox6.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox6.Location = new System.Drawing.Point(19, 443);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 43;
-            this.pictureBox6.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.CustomerDGV);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Location = new System.Drawing.Point(172, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(833, 740);
+            this.panel1.TabIndex = 35;
             // 
-            // pictureBox5
+            // CustomerDGV
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox5.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox5.Location = new System.Drawing.Point(19, 375);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 41;
-            this.pictureBox5.TabStop = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.CustomerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.CustomerDGV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.CustomerDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CustomerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.CustomerDGV.ColumnHeadersHeight = 28;
+            this.CustomerDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CustomerDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CustomerDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CustomerDGV.Location = new System.Drawing.Point(19, 397);
+            this.CustomerDGV.Name = "CustomerDGV";
+            this.CustomerDGV.RowHeadersVisible = false;
+            this.CustomerDGV.Size = new System.Drawing.Size(800, 329);
+            this.CustomerDGV.TabIndex = 23;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.CustomerDGV.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.CustomerDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CustomerDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Maroon;
+            this.CustomerDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.CustomerDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.CustomerDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.CustomerDGV.ThemeStyle.HeaderStyle.Height = 28;
+            this.CustomerDGV.ThemeStyle.ReadOnly = false;
+            this.CustomerDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.CustomerDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.CustomerDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.CustomerDGV.ThemeStyle.RowsStyle.Height = 22;
+            this.CustomerDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CustomerDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.CustomerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDGV_CellContentClick);
             // 
-            // pictureBox2
+            // panel3
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox2.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox2.Location = new System.Drawing.Point(19, 185);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 37;
-            this.pictureBox2.TabStop = false;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.CusDelBtn);
+            this.panel3.Controls.Add(this.CusEditBtn);
+            this.panel3.Controls.Add(this.CusSaveBtn);
+            this.panel3.Controls.Add(this.CusPhoneTb);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.CusAddTb);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.CusNameTb);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.pictureBox8);
+            this.panel3.Location = new System.Drawing.Point(19, 39);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(800, 326);
+            this.panel3.TabIndex = 7;
             // 
             // CusDelBtn
             // 
@@ -291,17 +317,31 @@
             this.CusEditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CusEditBtn.Click += new System.EventHandler(this.CusEditBtn_Click);
             // 
-            // label17
+            // CusSaveBtn
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Crimson;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Navy;
-            this.label17.Location = new System.Drawing.Point(62, 135);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 19);
-            this.label17.TabIndex = 48;
-            this.label17.Text = "Home";
+            this.CusSaveBtn.ActiveBorderThickness = 1;
+            this.CusSaveBtn.ActiveCornerRadius = 20;
+            this.CusSaveBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.CusSaveBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.CusSaveBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.CusSaveBtn.BackColor = System.Drawing.Color.White;
+            this.CusSaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CusSaveBtn.BackgroundImage")));
+            this.CusSaveBtn.ButtonText = "Save";
+            this.CusSaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CusSaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CusSaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.CusSaveBtn.IdleBorderThickness = 1;
+            this.CusSaveBtn.IdleCornerRadius = 20;
+            this.CusSaveBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.CusSaveBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.CusSaveBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.CusSaveBtn.Location = new System.Drawing.Point(245, 262);
+            this.CusSaveBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.CusSaveBtn.Name = "CusSaveBtn";
+            this.CusSaveBtn.Size = new System.Drawing.Size(108, 36);
+            this.CusSaveBtn.TabIndex = 22;
+            this.CusSaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CusSaveBtn.Click += new System.EventHandler(this.CusSaveBtn_Click);
             // 
             // pictureBox8
             // 
@@ -315,48 +355,6 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 4;
             this.pictureBox8.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Navy;
-            this.label11.Location = new System.Drawing.Point(321, 368);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(163, 26);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Customers List";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.CustomerDGV);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(172, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(833, 740);
-            this.panel1.TabIndex = 35;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.CusDelBtn);
-            this.panel3.Controls.Add(this.CusEditBtn);
-            this.panel3.Controls.Add(this.CusSaveBtn);
-            this.panel3.Controls.Add(this.CusPhoneTb);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.CusAddTb);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.CusNameTb);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.Location = new System.Drawing.Point(19, 39);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 326);
-            this.panel3.TabIndex = 7;
             // 
             // bunifuElipse2
             // 
@@ -460,6 +458,7 @@
             this.label5.Size = new System.Drawing.Size(61, 19);
             this.label5.TabIndex = 42;
             this.label5.Text = "Billings";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // bunifuElipse5
             // 
@@ -490,58 +489,60 @@
             this.pictureBox3.TabIndex = 49;
             this.pictureBox3.TabStop = false;
             // 
-            // CustomerDGV
+            // pictureBox11
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.CustomerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.CustomerDGV.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.CustomerDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CustomerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.CustomerDGV.ColumnHeadersHeight = 28;
-            this.CustomerDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CustomerDGV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CustomerDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.CustomerDGV.Location = new System.Drawing.Point(19, 397);
-            this.CustomerDGV.Name = "CustomerDGV";
-            this.CustomerDGV.RowHeadersVisible = false;
-            this.CustomerDGV.Size = new System.Drawing.Size(800, 329);
-            this.CustomerDGV.TabIndex = 23;
-            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.CustomerDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.CustomerDGV.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.CustomerDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.CustomerDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Maroon;
-            this.CustomerDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.CustomerDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.CustomerDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.CustomerDGV.ThemeStyle.HeaderStyle.Height = 28;
-            this.CustomerDGV.ThemeStyle.ReadOnly = false;
-            this.CustomerDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.CustomerDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.CustomerDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.CustomerDGV.ThemeStyle.RowsStyle.Height = 22;
-            this.CustomerDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.CustomerDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.CustomerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDGV_CellContentClick);
+            this.pictureBox11.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox11.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox11.Location = new System.Drawing.Point(18, 126);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 47;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox7.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox7.Location = new System.Drawing.Point(59, 12);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 45;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox6.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox6.Location = new System.Drawing.Point(19, 443);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 43;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox5.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox5.Location = new System.Drawing.Point(19, 375);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 41;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox2.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox2.Location = new System.Drawing.Point(19, 185);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 37;
+            this.pictureBox2.TabStop = false;
             // 
             // Customers
             // 
@@ -568,21 +569,21 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customers";
             this.Load += new System.EventHandler(this.Customers_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerDGV)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomerDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
