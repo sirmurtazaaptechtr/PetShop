@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 
@@ -192,6 +193,45 @@ namespace PetShop
 
         private void TotalAmountLbl_Click(object sender, EventArgs e)
         {
+
+        }
+
+        string prodName;
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm",458,600);
+            if(printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
+        int prodid, prodqty, prodprice, tottal, pos = 60;
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Pet Shop", new Font("Centuary Gothic", 12, FontStyle.Bold),Brushes.Red, new Point(80));
+            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Centuary Gothic", 10, FontStyle.Bold), Brushes.Red, new Point(26,40));
+            foreach(DataGridViewRow row in BillDGV.Rows)
+            {
+                prodid = Convert.ToInt32(row.Cells["column1"].Value);
+                prodName = "" + row.Cells["column2"].Value;
+                prodqty = Convert.ToInt32(row.Cells["column3"].Value);
+                prodprice = Convert.ToInt32(row.Cells["column4"].Value);
+                tottal = Convert.ToInt32(row.Cells["column5"].Value);
+                e.Graphics.DrawString("" + prodid, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(26,pos));
+                e.Graphics.DrawString("" + prodName, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(45, pos));
+                e.Graphics.DrawString("" + prodqty, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(120, pos));
+                e.Graphics.DrawString("" + prodprice, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(170, pos));
+                e.Graphics.DrawString("" + tottal, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(235, pos));
+                pos = pos + 20;
+            }
+            e.Graphics.DrawString("Grand Total: PKR " + GrdTotal, new Font("Centuary Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(50, pos + 50));
+            e.Graphics.DrawString("*********************PetShop**********************", new Font("Centuary Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(10, pos + 85));
+            BillDGV.Rows.Clear();
+            BillDGV.Refresh();
+            pos = 100;
+            n = 0;
+            GrdTotal = 0;           
 
         }
 
