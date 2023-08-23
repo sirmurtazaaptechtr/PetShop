@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.IdentityModel.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace PetShop
 {
@@ -19,6 +13,16 @@ namespace PetShop
             InitializeComponent();
             DisplayProducts();
             GetCustomer();
+            GetCustName();
+        }
+        int Key = 0, Stock = 0;
+        private void Reset()
+        {
+            PrNameTb.Text = "";
+            PrPriceTb.Text = "";
+            QtyTb.Text = "";
+            Stock = 0;
+            Key = 0;
         }
         SqlConnection Conn = new SqlConnection(@"Data Source=LAB1A\MSSQLSERVER1122;Initial Catalog=PetShopDb;Integrated Security=True");
         private void GetCustomer()
@@ -90,23 +94,83 @@ namespace PetShop
                 Conn.Close();
             }
         }
-        private void Reset()
+        private void UpdateStock()
         {
-
+            try
+            {
+                int NewQty = Stock - Convert.ToInt32(QtyTb.Text);
+                Conn.Open();
+                SqlCommand cmd = new SqlCommand("update ProductTbl set PrQty=@PQ where PrId=@PKey", Conn);
+                cmd.Parameters.AddWithValue("@PKey", Key);
+                cmd.Parameters.AddWithValue("@PQ", NewQty);
+                cmd.ExecuteNonQuery();
+                Conn.Close();
+                DisplayProducts();
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+            finally 
+            { 
+                Conn.Close();
+            }
         }
+        
+        int n = 0, GrdTotal = 0;
+        private void AddToBillBtn_Click(object sender, EventArgs e)
+        {
+            if(QtyTb.Text == "" || Convert.ToInt32(QtyTb.Text) > Stock)
+            {
+                MessageBox.Show("No Enough in Stock");
+            }
+            else if(QtyTb.Text == "" || Key == 0)
+            {
+                MessageBox.Show("Missing Information!");
+            }
+            else
+            {
+                int total = Convert.ToInt32(QtyTb.Text) * Convert.ToInt32(PrPriceTb.Text);
+                DataGridViewRow newRow = new DataGridViewRow();
+                newRow.CreateCells(BillDGV);
+                newRow.Cells[0].Value = n + 1;
+                newRow.Cells[1].Value = PrNameTb.Text;
+                newRow.Cells[2].Value = QtyTb.Text;
+                newRow.Cells[3].Value = PrPriceTb.Text;
+                newRow.Cells[4].Value = total;                
+
+                BillDGV.Rows.Add(newRow);
+                n++;
+                GrdTotal = GrdTotal + total;
+                TotalAmountLbl.Text = "PKR" + GrdTotal;
+                UpdateStock();
+                Reset();
+            }
+        }      
 
         private void ProductsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (ProductsDGV.SelectedRows.Count > 0) // Check if any rows are selected
+            {
+                PrNameTb.Text = ProductsDGV.SelectedRows[0].Cells[1].Value.ToString();
+                Stock = Convert.ToInt32(ProductsDGV.SelectedRows[0].Cells[3].Value.ToString());
+                QtyTb.Text = Stock.ToString();
+                PrPriceTb.Text = ProductsDGV.SelectedRows[0].Cells[4].Value.ToString();
+                if (PrNameTb.Text == "")
+                {
+                    Key = 0;
+                }
+                else
+                {
+                    Key = Convert.ToInt32(ProductsDGV.SelectedRows[0].Cells[0].Value.ToString());
+                }
+            }
         }
         private void ResetBtn_Click(object sender, EventArgs e)
         {
             Reset();            
         }
-        private void AddToBillBtn_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         private void label1_Click(object sender, EventArgs e)
         {
             Products ProObj = new Products();
@@ -120,6 +184,17 @@ namespace PetShop
             EmpObj.Show();
             this.Hide();
         }
+
+        private void BillDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TotalAmountLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void label4_Click(object sender, EventArgs e)
         {
             Billings BillsObj = new Billings();
