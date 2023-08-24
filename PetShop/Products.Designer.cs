@@ -44,15 +44,20 @@
             this.ProCategoriesCb = new System.Windows.Forms.ComboBox();
             this.ProPriceTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.ProDelBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ProEditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ProSaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ProQtyTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.ProNameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -66,23 +71,18 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.ProDelBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.ProEditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.ProSaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse5
@@ -127,6 +127,7 @@
             this.label17.Size = new System.Drawing.Size(56, 19);
             this.label17.TabIndex = 62;
             this.label17.Text = "Home";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // panel1
             // 
@@ -260,6 +261,84 @@
             this.label2.TabIndex = 25;
             this.label2.Text = "Price";
             // 
+            // ProDelBtn
+            // 
+            this.ProDelBtn.ActiveBorderThickness = 1;
+            this.ProDelBtn.ActiveCornerRadius = 20;
+            this.ProDelBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.ProDelBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ProDelBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.ProDelBtn.BackColor = System.Drawing.Color.White;
+            this.ProDelBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProDelBtn.BackgroundImage")));
+            this.ProDelBtn.ButtonText = "Delete";
+            this.ProDelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProDelBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProDelBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ProDelBtn.IdleBorderThickness = 1;
+            this.ProDelBtn.IdleCornerRadius = 20;
+            this.ProDelBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.ProDelBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.ProDelBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.ProDelBtn.Location = new System.Drawing.Point(457, 212);
+            this.ProDelBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ProDelBtn.Name = "ProDelBtn";
+            this.ProDelBtn.Size = new System.Drawing.Size(108, 36);
+            this.ProDelBtn.TabIndex = 24;
+            this.ProDelBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ProDelBtn.Click += new System.EventHandler(this.ProDelBtn_Click);
+            // 
+            // ProEditBtn
+            // 
+            this.ProEditBtn.ActiveBorderThickness = 1;
+            this.ProEditBtn.ActiveCornerRadius = 20;
+            this.ProEditBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.ProEditBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ProEditBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.ProEditBtn.BackColor = System.Drawing.Color.White;
+            this.ProEditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProEditBtn.BackgroundImage")));
+            this.ProEditBtn.ButtonText = "Update";
+            this.ProEditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProEditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProEditBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ProEditBtn.IdleBorderThickness = 1;
+            this.ProEditBtn.IdleCornerRadius = 20;
+            this.ProEditBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.ProEditBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.ProEditBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.ProEditBtn.Location = new System.Drawing.Point(339, 212);
+            this.ProEditBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ProEditBtn.Name = "ProEditBtn";
+            this.ProEditBtn.Size = new System.Drawing.Size(108, 36);
+            this.ProEditBtn.TabIndex = 23;
+            this.ProEditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ProEditBtn.Click += new System.EventHandler(this.ProEditBtn_Click);
+            // 
+            // ProSaveBtn
+            // 
+            this.ProSaveBtn.ActiveBorderThickness = 1;
+            this.ProSaveBtn.ActiveCornerRadius = 20;
+            this.ProSaveBtn.ActiveFillColor = System.Drawing.Color.Black;
+            this.ProSaveBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ProSaveBtn.ActiveLineColor = System.Drawing.Color.Black;
+            this.ProSaveBtn.BackColor = System.Drawing.Color.White;
+            this.ProSaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProSaveBtn.BackgroundImage")));
+            this.ProSaveBtn.ButtonText = "Save";
+            this.ProSaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProSaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProSaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ProSaveBtn.IdleBorderThickness = 1;
+            this.ProSaveBtn.IdleCornerRadius = 20;
+            this.ProSaveBtn.IdleFillColor = System.Drawing.Color.Crimson;
+            this.ProSaveBtn.IdleForecolor = System.Drawing.Color.Navy;
+            this.ProSaveBtn.IdleLineColor = System.Drawing.Color.Crimson;
+            this.ProSaveBtn.Location = new System.Drawing.Point(221, 212);
+            this.ProSaveBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ProSaveBtn.Name = "ProSaveBtn";
+            this.ProSaveBtn.Size = new System.Drawing.Size(108, 36);
+            this.ProSaveBtn.TabIndex = 22;
+            this.ProSaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ProSaveBtn.Click += new System.EventHandler(this.ProSaveBtn_Click);
+            // 
             // ProQtyTb
             // 
             this.ProQtyTb.Location = new System.Drawing.Point(247, 99);
@@ -321,6 +400,19 @@
             this.label8.TabIndex = 6;
             this.label8.Text = "Products";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.ErrorImage")));
+            this.pictureBox8.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox8.Location = new System.Drawing.Point(763, 8);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -348,6 +440,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 40);
             this.panel2.TabIndex = 52;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox2.Image = global::PetShop.Properties.Resources.pawprint;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 53;
+            this.pictureBox2.TabStop = false;
             // 
             // bunifuElipse1
             // 
@@ -387,6 +490,7 @@
             this.label6.Size = new System.Drawing.Size(61, 19);
             this.label6.TabIndex = 58;
             this.label6.Text = "Logout";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -472,108 +576,6 @@
             this.pictureBox5.TabIndex = 55;
             this.pictureBox5.TabStop = false;
             // 
-            // ProDelBtn
-            // 
-            this.ProDelBtn.ActiveBorderThickness = 1;
-            this.ProDelBtn.ActiveCornerRadius = 20;
-            this.ProDelBtn.ActiveFillColor = System.Drawing.Color.Black;
-            this.ProDelBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.ProDelBtn.ActiveLineColor = System.Drawing.Color.Black;
-            this.ProDelBtn.BackColor = System.Drawing.Color.White;
-            this.ProDelBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProDelBtn.BackgroundImage")));
-            this.ProDelBtn.ButtonText = "Delete";
-            this.ProDelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProDelBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProDelBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ProDelBtn.IdleBorderThickness = 1;
-            this.ProDelBtn.IdleCornerRadius = 20;
-            this.ProDelBtn.IdleFillColor = System.Drawing.Color.Crimson;
-            this.ProDelBtn.IdleForecolor = System.Drawing.Color.Navy;
-            this.ProDelBtn.IdleLineColor = System.Drawing.Color.Crimson;
-            this.ProDelBtn.Location = new System.Drawing.Point(457, 212);
-            this.ProDelBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ProDelBtn.Name = "ProDelBtn";
-            this.ProDelBtn.Size = new System.Drawing.Size(108, 36);
-            this.ProDelBtn.TabIndex = 24;
-            this.ProDelBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ProDelBtn.Click += new System.EventHandler(this.ProDelBtn_Click);
-            // 
-            // ProEditBtn
-            // 
-            this.ProEditBtn.ActiveBorderThickness = 1;
-            this.ProEditBtn.ActiveCornerRadius = 20;
-            this.ProEditBtn.ActiveFillColor = System.Drawing.Color.Black;
-            this.ProEditBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.ProEditBtn.ActiveLineColor = System.Drawing.Color.Black;
-            this.ProEditBtn.BackColor = System.Drawing.Color.White;
-            this.ProEditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProEditBtn.BackgroundImage")));
-            this.ProEditBtn.ButtonText = "Update";
-            this.ProEditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProEditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProEditBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ProEditBtn.IdleBorderThickness = 1;
-            this.ProEditBtn.IdleCornerRadius = 20;
-            this.ProEditBtn.IdleFillColor = System.Drawing.Color.Crimson;
-            this.ProEditBtn.IdleForecolor = System.Drawing.Color.Navy;
-            this.ProEditBtn.IdleLineColor = System.Drawing.Color.Crimson;
-            this.ProEditBtn.Location = new System.Drawing.Point(339, 212);
-            this.ProEditBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ProEditBtn.Name = "ProEditBtn";
-            this.ProEditBtn.Size = new System.Drawing.Size(108, 36);
-            this.ProEditBtn.TabIndex = 23;
-            this.ProEditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ProEditBtn.Click += new System.EventHandler(this.ProEditBtn_Click);
-            // 
-            // ProSaveBtn
-            // 
-            this.ProSaveBtn.ActiveBorderThickness = 1;
-            this.ProSaveBtn.ActiveCornerRadius = 20;
-            this.ProSaveBtn.ActiveFillColor = System.Drawing.Color.Black;
-            this.ProSaveBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.ProSaveBtn.ActiveLineColor = System.Drawing.Color.Black;
-            this.ProSaveBtn.BackColor = System.Drawing.Color.White;
-            this.ProSaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProSaveBtn.BackgroundImage")));
-            this.ProSaveBtn.ButtonText = "Save";
-            this.ProSaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProSaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProSaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ProSaveBtn.IdleBorderThickness = 1;
-            this.ProSaveBtn.IdleCornerRadius = 20;
-            this.ProSaveBtn.IdleFillColor = System.Drawing.Color.Crimson;
-            this.ProSaveBtn.IdleForecolor = System.Drawing.Color.Navy;
-            this.ProSaveBtn.IdleLineColor = System.Drawing.Color.Crimson;
-            this.ProSaveBtn.Location = new System.Drawing.Point(221, 212);
-            this.ProSaveBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ProSaveBtn.Name = "ProSaveBtn";
-            this.ProSaveBtn.Size = new System.Drawing.Size(108, 36);
-            this.ProSaveBtn.TabIndex = 22;
-            this.ProSaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ProSaveBtn.Click += new System.EventHandler(this.ProSaveBtn_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.ErrorImage")));
-            this.pictureBox8.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox8.Location = new System.Drawing.Point(763, 8);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox2.Image = global::PetShop.Properties.Resources.pawprint;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 53;
-            this.pictureBox2.TabStop = false;
-            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -603,16 +605,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

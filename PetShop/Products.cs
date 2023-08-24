@@ -202,5 +202,19 @@ namespace PetShop
             BillsObj.Show();
             this.Hide();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Home obj = new Home();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

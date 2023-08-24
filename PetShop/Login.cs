@@ -37,7 +37,7 @@ namespace PetShop
 
         }
 
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        private void loginBtn_Click(object sender, EventArgs e)
         {
 
         }

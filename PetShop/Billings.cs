@@ -207,6 +207,20 @@ namespace PetShop
         }
         int prodid, prodqty, prodprice, tottal, pos = 60;
 
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Home obj = new Home();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Pet Shop", new Font("Centuary Gothic", 12, FontStyle.Bold),Brushes.Red, new Point(80));

@@ -339,6 +339,7 @@
             this.label2.Size = new System.Drawing.Size(56, 19);
             this.label2.TabIndex = 6;
             this.label2.Text = "Home";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -369,6 +370,7 @@
             this.label1.Size = new System.Drawing.Size(74, 19);
             this.label1.TabIndex = 8;
             this.label1.Text = "Products";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -392,6 +394,7 @@
             this.label3.Size = new System.Drawing.Size(93, 19);
             this.label3.TabIndex = 10;
             this.label3.Text = "Employees";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox3
             // 
@@ -415,6 +418,7 @@
             this.label4.Size = new System.Drawing.Size(88, 19);
             this.label4.TabIndex = 12;
             this.label4.Text = "Customers";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox4
             // 
@@ -438,6 +442,7 @@
             this.label5.Size = new System.Drawing.Size(61, 19);
             this.label5.TabIndex = 14;
             this.label5.Text = "Billings";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox5
             // 
@@ -461,6 +466,7 @@
             this.label6.Size = new System.Drawing.Size(61, 19);
             this.label6.TabIndex = 16;
             this.label6.Text = "Logout";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox6
             // 

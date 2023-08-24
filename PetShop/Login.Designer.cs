@@ -1,4 +1,6 @@
-﻿namespace PetShop
+﻿using System;
+
+namespace PetShop
 {
     partial class Login
     {
@@ -160,7 +162,7 @@
             this.LoginBtn.Size = new System.Drawing.Size(181, 47);
             this.LoginBtn.TabIndex = 8;
             this.LoginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LoginBtn.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // label4
             // 
@@ -221,6 +223,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

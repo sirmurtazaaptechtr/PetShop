@@ -593,6 +593,7 @@
             this.label17.Size = new System.Drawing.Size(56, 19);
             this.label17.TabIndex = 2;
             this.label17.Text = "Home";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // pictureBox11
             // 
