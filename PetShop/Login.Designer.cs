@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace PetShop
 {
@@ -37,7 +39,7 @@ namespace PetShop
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.usernameTB = new System.Windows.Forms.TextBox();
+            this.UsernameTB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.PasswordTB = new System.Windows.Forms.TextBox();
@@ -99,12 +101,12 @@ namespace PetShop
             this.bunifuElipse1.ElipseRadius = 35;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // usernameTB
+            // UsernameTB
             // 
-            this.usernameTB.Location = new System.Drawing.Point(126, 140);
-            this.usernameTB.Name = "usernameTB";
-            this.usernameTB.Size = new System.Drawing.Size(316, 33);
-            this.usernameTB.TabIndex = 1;
+            this.UsernameTB.Location = new System.Drawing.Point(126, 140);
+            this.UsernameTB.Name = "UsernameTB";
+            this.UsernameTB.Size = new System.Drawing.Size(316, 33);
+            this.UsernameTB.TabIndex = 1;
             // 
             // label2
             // 
@@ -208,7 +210,7 @@ namespace PetShop
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PasswordTB);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.usernameTB);
+            this.Controls.Add(this.UsernameTB);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -223,12 +225,8 @@ namespace PetShop
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
+        }       
 
-        private void LoginBtn_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
 
@@ -238,7 +236,7 @@ namespace PetShop
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox usernameTB;
+        private System.Windows.Forms.TextBox UsernameTB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox PasswordTB;
         private Bunifu.Framework.UI.BunifuThinButton2 LoginBtn;

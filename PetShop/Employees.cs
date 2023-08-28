@@ -126,13 +126,14 @@ namespace PetShop
             EmpNameTb.Text = ""; 
             EmpPhoneTb.Text = "";              
             EmpAddTb.Text = ""; 
+            EmpUsernameTb.Text = "";
             EmpPasswordTb.Text = "";
         }
         int key = 0;
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            if(EmpNameTb.Text == "" || EmpPhoneTb.Text == "" || EmpDOB.Text == "" || EmpAddTb.Text == "" || EmpPasswordTb.Text == "")
+            if(EmpNameTb.Text == "" || EmpPhoneTb.Text == "" || EmpDOB.Text == "" || EmpAddTb.Text == "" || EmpUsernameTb.Text == "" || EmpPasswordTb.Text == "")
             {
                 MessageBox.Show("Missing Information");
             }
@@ -141,11 +142,12 @@ namespace PetShop
                 try
                 {
                     Conn.Open();
-                    SqlCommand cmd = new SqlCommand("insert into EmployeeTbl(EmpName,EmpAdd,EmpDOB,EmpPhone,EmpPass) values(@EN,@EA,@ED,@EP,@EPa)",Conn);
+                    SqlCommand cmd = new SqlCommand("insert into EmployeeTbl(EmpName,EmpAdd,EmpDOB,EmpPhone,EmpUsername,EmpPass) values(@EN,@EA,@ED,@EP,@EUn,@EPa)", Conn);
                     cmd.Parameters.AddWithValue("@EN", EmpNameTb.Text);
                     cmd.Parameters.AddWithValue("@EA", EmpAddTb.Text);
                     cmd.Parameters.AddWithValue("@ED", EmpDOB.Value.Date);
                     cmd.Parameters.AddWithValue("@EP", EmpPhoneTb.Text);
+                    cmd.Parameters.AddWithValue("@EUn", EmpUsernameTb.Text);        
                     cmd.Parameters.AddWithValue("@EPa", EmpPasswordTb.Text);        
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee Added Successfully");
@@ -168,7 +170,8 @@ namespace PetShop
             EmpAddTb.Text = EmployeeDGV.SelectedRows[0].Cells[2].Value.ToString();
             EmpDOB.Text = EmployeeDGV.SelectedRows[0].Cells[3].Value.ToString();
             EmpPhoneTb.Text = EmployeeDGV.SelectedRows[0].Cells[4].Value.ToString();
-            EmpPasswordTb.Text = EmployeeDGV.SelectedRows[0].Cells[5].Value.ToString();
+            EmpUsernameTb.Text = EmployeeDGV.SelectedRows[0].Cells[5].Value.ToString();
+            EmpPasswordTb.Text = EmployeeDGV.SelectedRows[0].Cells[6].Value.ToString();
             if(EmpNameTb.Text != "")
             {
                 key = Convert.ToInt32(EmployeeDGV.SelectedRows[0].Cells[0].Value.ToString());
@@ -182,7 +185,7 @@ namespace PetShop
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-            if (EmpNameTb.Text == "" || EmpPhoneTb.Text == "" || EmpDOB.Text == "" || EmpAddTb.Text == "" || EmpPasswordTb.Text == "")
+            if (EmpNameTb.Text == "" || EmpPhoneTb.Text == "" || EmpDOB.Text == "" || EmpAddTb.Text == "" || EmpUsernameTb.Text == "" || EmpPasswordTb.Text == "")
             {
                 MessageBox.Show("Missing Information");                
             }
@@ -191,11 +194,12 @@ namespace PetShop
                 try
                 {
                     Conn.Open();
-                    SqlCommand cmd = new SqlCommand("update EmployeeTbl set EmpName = @EN,EmpAdd = @EA,EmpDOB = @ED,EmpPhone = @EP,EmpPass = @EPa where EmpNum = @EKey", Conn);
+                    SqlCommand cmd = new SqlCommand("update EmployeeTbl set EmpName = @EN,EmpAdd = @EA,EmpDOB = @ED,EmpPhone = @EP,EmpUsername = @EUn,EmpPass = @EPa where EmpNum = @EKey", Conn);
                     cmd.Parameters.AddWithValue("@EN", EmpNameTb.Text);
                     cmd.Parameters.AddWithValue("@EA", EmpAddTb.Text);
                     cmd.Parameters.AddWithValue("@ED", EmpDOB.Value.Date);
                     cmd.Parameters.AddWithValue("@EP", EmpPhoneTb.Text);
+                    cmd.Parameters.AddWithValue("@EUn", EmpUsernameTb.Text);
                     cmd.Parameters.AddWithValue("@EPa", EmpPasswordTb.Text);
                     cmd.Parameters.AddWithValue("@EKey", key);
                     cmd.ExecuteNonQuery();
