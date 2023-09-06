@@ -4,7 +4,6 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
-
 namespace PetShop
 {
     public partial class Billings : Form
@@ -13,19 +12,12 @@ namespace PetShop
         {
             InitializeComponent();
             DisplayProducts();
+            DisplayTransactions();
             GetCustomer();
             GetCustName();
         }
-        int Key = 0, Stock = 0;
-        private void Reset()
-        {
-            PrNameTb.Text = "";
-            PrPriceTb.Text = "";
-            QtyTb.Text = "";
-            Stock = 0;
-            Key = 0;
-        }
         SqlConnection Conn = new SqlConnection(@"Data Source=LAB1A\MSSQLSERVER1122;Initial Catalog=PetShopDb;Integrated Security=True");
+        int Key = 0, Stock = 0;
         private void GetCustomer()
         {
             try
@@ -95,6 +87,27 @@ namespace PetShop
                 Conn.Close();
             }
         }
+        private void DisplayTransactions()
+        {
+            try
+            {
+                Conn.Open();
+                string SelectSqlQuery = "select * from BillTbl";
+                SqlDataAdapter Sda = new SqlDataAdapter(SelectSqlQuery, Conn);
+                SqlCommandBuilder CmdBuilder = new SqlCommandBuilder(Sda);
+                var Ds = new DataSet();
+                Sda.Fill(Ds);
+                TransactionsDGV.DataSource = Ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Conn.Close();
+            }
+        }
         private void UpdateStock()
         {
             try
@@ -108,24 +121,31 @@ namespace PetShop
                 Conn.Close();
                 DisplayProducts();
             }
-            catch(Exception Ex)
+            catch (Exception Ex)
             {
                 MessageBox.Show(Ex.Message);
             }
-            finally 
-            { 
+            finally
+            {
                 Conn.Close();
             }
         }
-        
+        private void Reset()
+        {
+            PrNameTb.Text = "";
+            PrPriceTb.Text = "";
+            QtyTb.Text = "";
+            Stock = 0;
+            Key = 0;
+        }
         int n = 0, GrdTotal = 0;
         private void AddToBillBtn_Click(object sender, EventArgs e)
         {
-            if(QtyTb.Text == "" || Convert.ToInt32(QtyTb.Text) > Stock)
+            if (QtyTb.Text == "" || Convert.ToInt32(QtyTb.Text) > Stock)
             {
                 MessageBox.Show("No Enough in Stock");
             }
-            else if(QtyTb.Text == "" || Key == 0)
+            else if (QtyTb.Text == "" || Key == 0)
             {
                 MessageBox.Show("Missing Information!");
             }
@@ -138,7 +158,7 @@ namespace PetShop
                 newRow.Cells[1].Value = PrNameTb.Text;
                 newRow.Cells[2].Value = QtyTb.Text;
                 newRow.Cells[3].Value = PrPriceTb.Text;
-                newRow.Cells[4].Value = total;                
+                newRow.Cells[4].Value = total;
 
                 BillDGV.Rows.Add(newRow);
                 n++;
@@ -147,7 +167,7 @@ namespace PetShop
                 UpdateStock();
                 Reset();
             }
-        }      
+        }
 
         private void ProductsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -167,11 +187,18 @@ namespace PetShop
                 }
             }
         }
+        private void CusIDCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (CusIDCb.SelectedItem != null)
+            {
+                GetCustName();
+            }
+        }
         private void ResetBtn_Click(object sender, EventArgs e)
         {
-            Reset();            
+            Reset();
         }
-        
+
         private void label1_Click(object sender, EventArgs e)
         {
             Products ProObj = new Products();
@@ -195,17 +222,49 @@ namespace PetShop
         {
 
         }
+        private void InsertBill()
+        {
+            try
+            {
+                Conn.Open();
+                SqlCommand cmd = new SqlCommand("insert into BillTbl(BDate,CustID,CustName,EmpName,Amt) values(@BD,@CI,@CN,@EN,@AM)", Conn);
+                cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
+                cmd.Parameters.AddWithValue("@CI", CusIDCb.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@CN", CusNameTb.Text);
+                cmd.Parameters.AddWithValue("@EN", EmpNameLbl.Text);
+                cmd.Parameters.AddWithValue("@AM", GrdTotal);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Bill Created Successfully");
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+            finally
+            {
+                DisplayTransactions();
+                Conn.Close();
+            }
+        }
 
         string prodName;
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm",458,600);
-            if(printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            InsertBill();
+            DisplayTransactions();
+
+            printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 458, 600);
+            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
                 printDocument1.Print();
             }
         }
         int prodid, prodqty, prodprice, tottal, pos = 60;
+
+        private void EmpNameLbl_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void label17_Click(object sender, EventArgs e)
         {
@@ -223,16 +282,16 @@ namespace PetShop
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Pet Shop", new Font("Centuary Gothic", 12, FontStyle.Bold),Brushes.Red, new Point(80));
-            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Centuary Gothic", 10, FontStyle.Bold), Brushes.Red, new Point(26,40));
-            foreach(DataGridViewRow row in BillDGV.Rows)
+            e.Graphics.DrawString("Pet Shop", new Font("Centuary Gothic", 12, FontStyle.Bold), Brushes.Red, new Point(80));
+            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Centuary Gothic", 10, FontStyle.Bold), Brushes.Red, new Point(26, 40));
+            foreach (DataGridViewRow row in BillDGV.Rows)
             {
                 prodid = Convert.ToInt32(row.Cells["column1"].Value);
                 prodName = "" + row.Cells["column2"].Value;
                 prodqty = Convert.ToInt32(row.Cells["column3"].Value);
                 prodprice = Convert.ToInt32(row.Cells["column4"].Value);
                 tottal = Convert.ToInt32(row.Cells["column5"].Value);
-                e.Graphics.DrawString("" + prodid, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(26,pos));
+                e.Graphics.DrawString("" + prodid, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(26, pos));
                 e.Graphics.DrawString("" + prodName, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(45, pos));
                 e.Graphics.DrawString("" + prodqty, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(120, pos));
                 e.Graphics.DrawString("" + prodprice, new Font("Centuary Gothic", 8, FontStyle.Regular), Brushes.Blue, new Point(170, pos));
@@ -245,7 +304,7 @@ namespace PetShop
             BillDGV.Refresh();
             pos = 100;
             n = 0;
-            GrdTotal = 0;           
+            GrdTotal = 0;
 
         }
 
@@ -255,14 +314,11 @@ namespace PetShop
             BillsObj.Show();
             this.Hide();
         }
-
         private void label5_Click(object sender, EventArgs e)
         {
             Customers CusObj = new Customers();
             CusObj.Show();
             this.Hide();
         }
-
-
     }
 }

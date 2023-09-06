@@ -65,6 +65,7 @@ namespace PetShop
                         if (enteredPassword == passwordFromDB)
                         {
                             MessageBox.Show("Login successful");
+                            Conn.Close();
                             Home Obj = new Home();
                             Obj.Show();
                             this.Hide();

@@ -14,7 +14,7 @@ namespace PetShop
     {
         public Home()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -67,6 +67,11 @@ namespace PetShop
             Home obj = new Home();
             obj.Show();
             this.Hide();
+        }
+
+        private void EmpNameLbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

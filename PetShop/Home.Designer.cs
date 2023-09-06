@@ -64,7 +64,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.EmpNameLbl = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -479,17 +479,18 @@
             this.pictureBox6.TabIndex = 15;
             this.pictureBox6.TabStop = false;
             // 
-            // label7
+            // EmpNameLbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Crimson;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Navy;
-            this.label7.Location = new System.Drawing.Point(35, 60);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 19);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "EmpName";
+            this.EmpNameLbl.AutoSize = true;
+            this.EmpNameLbl.BackColor = System.Drawing.Color.Crimson;
+            this.EmpNameLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpNameLbl.ForeColor = System.Drawing.Color.Navy;
+            this.EmpNameLbl.Location = new System.Drawing.Point(35, 60);
+            this.EmpNameLbl.Name = "EmpNameLbl";
+            this.EmpNameLbl.Size = new System.Drawing.Size(93, 19);
+            this.EmpNameLbl.TabIndex = 18;
+            this.EmpNameLbl.Text = "EmpName";
+            this.EmpNameLbl.Click += new System.EventHandler(this.EmpNameLbl_Click);
             // 
             // pictureBox7
             // 
@@ -523,7 +524,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Crimson;
             this.ClientSize = new System.Drawing.Size(1024, 768);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.EmpNameLbl);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox6);
@@ -580,7 +581,7 @@
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label EmpNameLbl;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox6;
